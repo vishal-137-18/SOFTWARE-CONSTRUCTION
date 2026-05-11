@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Food Menu</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<div class="menu-page">
+
+    <h1>🍔 Food Menu</h1>
+
+    <input type="text" id="search" placeholder="Search food..."
+    onkeyup="searchFood()">
+
+    <div class="food-container">
+
+        <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd">
+            <h2>Burger</h2>
+            <p>₹120</p>
+            <button onclick="addCart('Burger',120)">Add to Cart</button>
+        </div>
+
+        <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591">
+            <h2>Pizza</h2>
+            <p>₹250</p>
+            <button onclick="addCart('Pizza',250)">Add to Cart</button>
+        </div>
+
+        <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1617093727343-374698b1b08d">
+            <h2>Noodles</h2>
+            <p>₹150</p>
+            <button onclick="addCart('Noodles',150)">Add to Cart</button>
+        </div>
+
+    </div>
+
+    <a href="/cart">
+        <button class="cart-btn">Go To Cart</button>
+    </a>
+
+</div>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>

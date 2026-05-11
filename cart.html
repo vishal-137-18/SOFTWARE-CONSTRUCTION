@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cart</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<div class="cart-page">
+
+    <div class="cart-box">
+
+        <h1>Your Cart</h1>
+
+        <h2>Total : ₹500</h2>
+
+        <button onclick="payment()">Pay Now</button>
+
+        <div id="success-box" style="display:none; margin-top:20px;">
+
+            <h2 style="color:green;">✅ Payment Successful</h2>
+
+            <textarea id="review"
+            placeholder="Write your review..."
+            style="width:90%; height:80px; padding:10px; border-radius:10px;"></textarea>
+
+            <br><br>
+
+            <button onclick="submitReview()">Submit Review</button>
+
+            <p id="thank-msg"
+            style="color:green; font-weight:bold; margin-top:15px;"></p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>
